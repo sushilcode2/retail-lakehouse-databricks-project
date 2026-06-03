@@ -86,3 +86,15 @@ data_quality_validation
 ## Project Outcome
 
 Successfully built an automated Databricks Lakehouse pipeline using Medallion Architecture with Delta Lake, Incremental Processing, Data Quality Checks, and Job Orchestration.
+
+## Challenges Faced
+
+1. DBFS root was disabled in the workspace.
+   Solution: Used Unity Catalog Volumes.
+
+2. Job workflow failed because notebooks depended on session variables.
+   Solution: Refactored notebooks to be self-contained.
+
+3. Incremental loading required MERGE INTO logic instead of overwrite operations.
+   Solution: Implemented Delta Lake MERGE operations.
+
