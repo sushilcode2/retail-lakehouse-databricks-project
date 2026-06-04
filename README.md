@@ -123,3 +123,12 @@ File: screenshots/gold_daily_revenue.png
 Shows task dependencies between Bronze ingestion, Silver transformations, Gold KPI generation, and Data Quality validation.
 
 File: screenshots/workflow_dag.png
+
+
+## Architecture Diagram
+
+![Retail Lakehouse Architecture](architecture/retail_lakehouse_architecture.png)
+
+### Pipeline Flow
+
+Source Files → Bronze → Silver → Gold → Data Quality Checks → Databricks Workflow → Email Notification
